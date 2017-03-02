@@ -1,6 +1,6 @@
 # nf.protocol-flow
 
-![flow.eps](flow.eps)
+![flow.png](flow.png)
 [flow.puml](flow.puml)
 
 ## introduce
