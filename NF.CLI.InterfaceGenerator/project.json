@@ -1,0 +1,16 @@
+{
+    "name": "NF.CLI.InterfaceGenerator",
+    "version": "1.0.0",
+    "buildOptions": {
+        "debugType": "portable",
+        "emitEntryPoint": true,
+    },
+    "frameworks": {
+        "net45": {
+            "dependencies": {
+                "DotLiquid" : "1.8.0",
+                "CommandLineParser": "2.1.1-beta"
+            }
+        }
+    }
+}

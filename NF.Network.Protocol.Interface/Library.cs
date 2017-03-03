@@ -33,8 +33,8 @@ namespace NF.Network.Protocol.Interface
 		T Result { get; }
 	}
 
-	public interface Sender<Q>
+	public interface MessageSender<BaseQ>
 	{
-            Task<R> Send<R> (Q msg) where R : new();
+            Task<R> MessageSend<R> (BaseQ msg) where R : BaseQ, new();
 	}
 }

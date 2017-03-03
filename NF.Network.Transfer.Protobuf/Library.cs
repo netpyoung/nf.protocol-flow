@@ -8,7 +8,7 @@ namespace NF.Network.Transfer.Protobuf
 	using NF.Network.Protocol.Interface;
 	using NF.Network.Task;
 
-	public abstract class BaseSender : Sender<Google.Protobuf.IMessage>
+	public abstract class BaseSender : MessageSender<Google.Protobuf.IMessage>
 	{
 		CookieContainer _cookie_container = new CookieContainer();
 		public int TimeoutMilliseconds { get; set; }
@@ -34,7 +34,7 @@ namespace NF.Network.Transfer.Protobuf
 		}
 
 
-            public virtual Task<R> Send<R>(Google.Protobuf.IMessage msg) where R : new()
+            public virtual Task<R> MessageSend<R>(Google.Protobuf.IMessage msg) where R : Google.Protobuf.IMessage, new()
 		{
 			string url = "http://127.0.0.1:8080";
 			var uri = new Uri (url);
@@ -60,7 +60,7 @@ namespace NF.Network.Transfer.Protobuf
 		}
 
 
-            protected virtual void FinishRequest<R>(IAsyncResult result) where R : new()
+            protected virtual void FinishRequest<R>(IAsyncResult result) where R : Google.Protobuf.IMessage, new()
 		{
 			// Get result from stream
 
@@ -80,9 +80,9 @@ namespace NF.Network.Transfer.Protobuf
 			}
 		}
 
-            protected virtual ActorReply<R> GetReplyFromStream<R>(Stream stream) where R : new()
+            protected virtual ActorReply<R> GetReplyFromStream<R>(Stream stream) where R : Google.Protobuf.IMessage, new()
 		{
-			var d = new R();
+                        var d = new R();
 			var msg = (Google.Protobuf.IMessage)d;
 			msg.MergeFrom (stream);
 
