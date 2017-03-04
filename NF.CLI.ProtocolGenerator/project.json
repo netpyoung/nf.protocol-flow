@@ -1,9 +1,9 @@
 {
-    "name": "NF.CLI.InterfaceGenerator",
+    "name": "NF.CLI.ProtocolGenerator",
     "version": "1.0.0",
     "buildOptions": {
         "debugType": "portable",
-        "emitEntryPoint": true,
+        "emitEntryPoint": true
     },
     "frameworks": {
         "net45": {

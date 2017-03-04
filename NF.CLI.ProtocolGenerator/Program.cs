@@ -1,4 +1,4 @@
-namespace NF.CLI.InterfaceGenerator
+namespace NF.CLI.ProtocolGenerator
 {
     using System;
     using System.IO;
