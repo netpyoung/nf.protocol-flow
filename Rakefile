@@ -3,7 +3,7 @@ require 'fileutils'
 
 BUILD_DIR = '__BUILD'
 
-task :default => :auto_generate
+task :default => :auto_generate_dlls
 
 
 task :ensure_build_dir do
