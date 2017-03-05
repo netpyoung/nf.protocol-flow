@@ -102,3 +102,15 @@ task :test_server do
     sh "python main.py"
   end
 end
+
+
+desc "generate message document"
+task :generate_message_doc do
+  # https://github.com/estan/protoc-gen-doc
+  # https://github.com/ebenoist/homebrew-protoc-gen-doc
+  sh 'brew tap ebenoist/protoc-gen-doc'
+  sh 'brew install protoc-gen-doc'
+  DOCUMENT_DIR = '__DOC'
+  mkdir_p DOCUMENT_DIR
+  sh "protoc --doc_out=html,index.html:#{DOCUMENT_DIR} @MESSAGE/*.proto"
+end
