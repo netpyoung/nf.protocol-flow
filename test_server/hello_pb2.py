@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n\x0bhello.proto\x12\x08protocol\" \n\x06QHello\x12\n\n\x02q1\x18\x01 \x01(\x05\x12\n\n\x02q2\x18\x02 \x01(\x05\" \n\x06RHello\x12\n\n\x02r1\x18\x01 \x01(\x05\x12\n\n\x02r2\x18\x02 \x01(\x05\x42\x18\xaa\x02\x15\x41utoGenerated.Messageb\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -39,14 +38,14 @@ _QHELLO = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='q2', full_name='protocol.QHello.q2', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -77,14 +76,14 @@ _RHELLO = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='r2', full_name='protocol.RHello.r2', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -103,6 +102,7 @@ _RHELLO = _descriptor.Descriptor(
 
 DESCRIPTOR.message_types_by_name['QHello'] = _QHELLO
 DESCRIPTOR.message_types_by_name['RHello'] = _RHELLO
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 QHello = _reflection.GeneratedProtocolMessageType('QHello', (_message.Message,), dict(
   DESCRIPTOR = _QHELLO,
