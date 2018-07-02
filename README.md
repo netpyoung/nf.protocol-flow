@@ -82,9 +82,6 @@ def hello():
 ```
 
 
-## TODO
-* [ ] [Investigate support for Unity #644](https://github.com/google/protobuf/issues/644)
-
 
 ## etc
 * https://atom.io/packages/plantuml-viewer
