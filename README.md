@@ -57,6 +57,14 @@ def hello():
 ```
 
 ## client
+``` csharp
+    // Hello.autogen.cs
+    public interface IHello: IMessageSender
+    {
+        Task<Result<RHello, int>> Hello(QHello q);
+        Task<Result<RHello, int>> Hello(System.Int32 Q1, System.Int32 Q2);
+    }
+```
 
 ``` csharp
         private async void Start()
