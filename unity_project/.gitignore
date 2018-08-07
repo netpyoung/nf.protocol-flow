@@ -31,3 +31,5 @@ sysinfo.txt
 *.unitypackage
 */Plugins/Android/AndroidManifest.xml*
 .idea/
+
+/.vs/
