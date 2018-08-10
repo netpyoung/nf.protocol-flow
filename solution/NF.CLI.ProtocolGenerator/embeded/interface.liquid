@@ -1,0 +1,15 @@
+/***************************
+ * DO NOT MODIFY THIS FILE
+ ***************************/
+using System.Threading.Tasks;
+using NF.Results;
+using {{ message_namespace }};
+
+namespace {{ interface_namespace }}
+{
+    public interface I{{ name }}: IMessageSender
+    {
+        Task<Result<{{ r.name }}, int>> {{ name }}({{ q.name }} q);
+        Task<Result<{{ r.name }}, int>> {{ name }}({{ q.arguments | join: ', ' }});
+    }
+}

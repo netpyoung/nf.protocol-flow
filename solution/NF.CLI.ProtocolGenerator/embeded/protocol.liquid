@@ -1,0 +1,26 @@
+/***************************
+ * DO NOT MODIFY THIS FILE
+ ***************************/
+
+using NF.Results;
+using {{ message_namespace }};
+using {{ interface_namespace }};
+using System.Threading.Tasks;
+
+namespace {{ protocol_namespace }}
+{
+    public partial class BaseSender : I{{ name }}
+    {
+        #region I{{ name }} implementation
+        public Task<Result<{{ r.name }}, int>> {{ name }}({{ q.name }} q)
+        {
+            return Send<R{{ name }}>(q);
+        }
+
+        public Task<Result<{{ r.name }}, int>> {{ name }}({{ q.arguments | join: ', ' }})
+        {
+            return {{ name }} (new {{ q.name }}() { {{ q.arguments | map: 'DuplicateAssignName' | join: ', ' }} });
+        }
+        #endregion
+   }
+}

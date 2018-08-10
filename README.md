@@ -24,8 +24,15 @@ $ dotnet --version
 2.1.101
 $ protoc --version
 libprotoc 3.5.1
-$ rake unity_project
+
+# autogen
+$ rake
+
+# launch test server
 $ rake test_server
+
+# generate protoc-doc
+$ rake doc
 ```
 
 ## message
