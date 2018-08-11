@@ -4,9 +4,12 @@
 [flow.puml](flow.puml)
 
 ## introduce
-this is sample protocol flow. When I making a game(in unity), I don't like to hard-coding for protocol class from message. I'm writing custom class generator, and protocol exporter for that work.
+this is sample protocol flow. When I making a game(in unity), I don't like to hard-coding for protocol class from message. 
+
+Almost mobile projects use web api server. so I choose protobuf as [IDL](https://en.wikipedia.org/wiki/Interface_description_language). after that, I need to writing API call method. But It's boring work that changing code everytime when .proto changed. so I'm writing custom class generator, and protocol exporter for that work.
 
 If you want to use [Akka.net](http://getakka.net/), check [Akka.Interfaced](https://github.com/SaladLab/Akka.Interfaced).
+
 
 ## basic Knowledge.
 * [Rakefile](https://github.com/ruby/rake)
