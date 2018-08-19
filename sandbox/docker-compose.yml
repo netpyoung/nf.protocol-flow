@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  protoc-doc:
+    image: pseudomuto/protoc-gen-doc
+    volumes:
+      - ../doc:/out 
+      - ../protos:/protos:ro
