@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NF.CLI.ProtocolGenerator", "NF.CLI.ProtocolGenerator\NF.CLI.ProtocolGenerator.csproj", "{523700BA-BE30-4483-A6C0-B3DB0923DE16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-nf-protocolflow", "dotnet-nf-protocolflow\dotnet-nf-protocolflow.csproj", "{523700BA-BE30-4483-A6C0-B3DB0923DE16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

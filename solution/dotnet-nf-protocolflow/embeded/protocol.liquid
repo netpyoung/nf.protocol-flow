@@ -19,7 +19,7 @@ namespace {{ protocol_namespace }}
 
         public Task<Result<{{ r.name }}, int>> {{ name }}({{ q.arguments | join: ', ' }})
         {
-            return {{ name }} (new {{ q.name }}() { {{ q.arguments | map: 'DuplicateAssignName' | join: ', ' }} });
+            return {{ name }} (new {{ q.name }}() { {{ q.arguments | map: 'assign_name' | join: ', ' }} });
         }
         #endregion
    }
